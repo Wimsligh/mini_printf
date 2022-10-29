@@ -1,3 +1,3 @@
 # mini_printf
 
-<h1> La petite version du printf <h2>
+<h2> La petite version du printf <h2>
