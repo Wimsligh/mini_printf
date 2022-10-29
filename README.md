@@ -1,3 +1,3 @@
 # mini_printf
 
-<h2> La petite version du printf <h2>
+<h3>Epitech Project, my_printf<h3>
