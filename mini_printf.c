@@ -28,9 +28,7 @@ int mini_printf(const char * format , ...)
 {
     va_list list;
     va_start(list, format);
-    int length = my_strlen(format);
     int i = 0;
-    int compteur = 0;
     while (format[i] != '\0') {
         if (format[i] == '%') {
             i++;
@@ -40,11 +38,6 @@ int mini_printf(const char * format , ...)
             my_putchar(format[i]);
             i++;
         }
-    }
-    while (compteur != format[i]) {
-        compteur = compteur + my_strlen(va_arg(list, char *));
-        compteur++;
-    }
-    return (compteur);
+    } 
     va_end(list);
 }
